@@ -6,13 +6,13 @@ import { SidebarItem } from './sidebar-item'
 
 const guestRoutes = [
   {
-    icon: Layout,
+    icon: Compass,
     label: 'Browse',
     href: '/',
   },
   {
-    icon: Compass,
-    label: 'Your courses',
+    icon: Layout,
+    label: 'Courses for you',
     href: '/search',
   },
 ]
