@@ -24,7 +24,7 @@ export default function CoursesList({ items }: CoursesListProps) {
         </div>
   
         {items.length === 0 ? (
-          <div className="mt-10 text-center text-sm text-muted-foreground">No courses found!</div>
+          <div className="mt-10 text-center text-sm text-muted-foreground">No courses found! Browse, create or enroll for a new course.</div>
         ) : null}
       </div>
     )

@@ -7,13 +7,13 @@ import { SidebarItem } from './sidebar-item'
 const guestRoutes = [
   {
     icon: Layout,
-    label: 'Dashboard',
-    href: '/',
+    label: 'Browse',
+    href: '/search',
   },
   {
     icon: Compass,
-    label: 'Browse',
-    href: '/search',
+    label: 'Dashboard',
+    href: '/',
   },
 ]
 
