@@ -11,7 +11,7 @@ export async function POST(req: NextRequest, { params }: { params: { courseId: s
         return new NextResponse('Unauthorized', { status: 401 })
       }
   
-      const course = await db.course.findUnique({ where: { id: params.courseId, isPublished: true } })
+      const course = await db.course.findUnique({ where: { id:  'clyugnfux0000ok1uzhskqo6c', isPublished: true } })
       if (!course) {
         return new NextResponse('Course not found!', { status: 404 })
       }
