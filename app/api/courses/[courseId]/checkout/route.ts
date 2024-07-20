@@ -56,7 +56,7 @@ export async function POST(req: NextRequest, { params }: { params: { courseId: s
         success_url: `${process.env.NEXT_PUBLIC_APP_URL}/courses/${course.id}?success=1`,
         cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/courses/${course.id}?cancelled=1`,
         metadata: {
-          courseId: course.id,
+          courseId: course.id, 
           userId: user.id,
         },
       })
