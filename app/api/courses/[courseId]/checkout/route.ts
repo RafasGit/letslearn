@@ -10,8 +10,9 @@ export async function POST(req: NextRequest, { params }: { params: { courseId: s
       if (!user || !user.id || !user.emailAddresses?.[0]?.emailAddress) {
         return new NextResponse('Unauthorized', { status: 401 })
       }
-  
-      const course = await db.course.findUnique({ where: { id:  'clyugnfux0000ok1uzhskqo6c', isPublished: true } })
+      console.log(`Attempting to find course with ID: ${params.courseId}`)
+      const course = await db.course.findUnique({ where: { id: params.courseId, isPublished: true } })
+      console.log(`Found course:`, course);
       if (!course) {
         return new NextResponse('Course not found!', { status: 404 })
       }
