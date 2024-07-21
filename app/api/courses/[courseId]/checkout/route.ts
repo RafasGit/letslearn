@@ -4,6 +4,32 @@ import Stripe from 'stripe'
 import { db } from '@/lib/db'
 import { stripe } from '@/lib/stripe'
 
+// interface Course {
+//   id: string;
+//   createdById: string;
+//   title: string;
+//   description: string | null; // Now accepts string or null
+//   imageUrl: string | null;
+//   price: number | null;
+//   isPublished: boolean;
+//   categoryId: string | null;
+//   createdAt: Date;
+//   updatedAt: Date;
+// }
+
+// async function findCourseWithRetry(params: { courseId: string }, maxAttempts: number = 5): Promise<Course | null> {
+//   let course;
+//   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+//       course = await db.course.findUnique({ where: { id: params.courseId, isPublished: true } });
+//       if (course) {
+//           return course;
+//       }
+//       // Optionally, include a delay before the next attempt
+//       // await new Promise(resolve => setTimeout(resolve, 1000)); // Delay of 1 second
+//   }
+//   return null;
+// }
+
 export async function POST(req: NextRequest, { params }: { params: { courseId: string } }) {
     try {
       const user = await currentUser()
@@ -11,8 +37,8 @@ export async function POST(req: NextRequest, { params }: { params: { courseId: s
         return new NextResponse('Unauthorized', { status: 401 })
       }
       console.log(`Attempting to find course with ID: ${params.courseId}`)
-      const course = await db.course.findUnique({ where: { id: params.courseId, isPublished: true } })
-      console.log(`Found course:`, course);
+      const course = await db.course.findUnique({ where: { id: params.courseId, isPublished: true } });
+     
       if (!course) {
         return new NextResponse('Course not found!', { status: 404 })
       }
