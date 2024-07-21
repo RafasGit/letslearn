@@ -5,7 +5,7 @@ import MuxPlayer from '@mux/mux-player-react'
 import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
-import { Loader2, Lock } from 'lucide-react'
+import { Loader2, Lock, Loader } from 'lucide-react'
 import Image from 'next/image'
 
 
@@ -65,7 +65,7 @@ interface VideoPlayerProps {
               {!isReady && !isLocked && (
                 <div className="absolute inset-0 flex items-center justify-center bg-slate-800">
                     <Image fill className="object-cover" alt={title} src={imageUrl} />
-                  <Loader2 className=" h-16 w-16 animate-spin text-secondary z-100" />
+                  <Loader className=" h-16 w-16 animate-spin text-secondary z-100" />
                 </div>
               )}
               {isLocked && (
