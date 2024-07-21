@@ -39,10 +39,12 @@ export default async function ChapterDetails({ params }: { params: { courseId: s
             chapterId={chapter.id}
             title={chapter.title}
             courseId={params.courseId}
-            nextChapterId={nextChapter?.id}
+            imageUrl={course.imageUrl!}
+             nextChapterId={nextChapter?.id}
             playbackId={muxData?.playbackId!}
             isLocked={isLocked}
             completeOnEnd={completedOnEnd}
+
           />
         </div>
 

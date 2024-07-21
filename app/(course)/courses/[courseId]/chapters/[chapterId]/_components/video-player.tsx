@@ -6,6 +6,8 @@ import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 import { Loader2, Lock } from 'lucide-react'
+import Image from 'next/image'
+
 
 import { cn } from '@/lib/utils'
 import { useConfettiStore } from '@/hooks/use-confetti'
@@ -18,6 +20,7 @@ interface VideoPlayerProps {
     isLocked: boolean
     completeOnEnd: boolean
     title: string
+    imageUrl: string
   }
 
   export const VideoPlayer = ({
@@ -28,6 +31,7 @@ interface VideoPlayerProps {
     isLocked,
     completeOnEnd,
     title,
+    imageUrl
   }: VideoPlayerProps) => {
     const [isReady, setIsReady] = useState(false)
     const router = useRouter()
@@ -60,7 +64,8 @@ interface VideoPlayerProps {
             <div className="relative aspect-video">
               {!isReady && !isLocked && (
                 <div className="absolute inset-0 flex items-center justify-center bg-slate-800">
-                  <Loader2 className="h-8 w-8 animate-spin text-secondary" />
+                    <Image fill className="object-cover" alt={title} src={imageUrl} />
+                  <Loader2 className=" h-16 w-16 animate-spin text-secondary z-100" />
                 </div>
               )}
               {isLocked && (
