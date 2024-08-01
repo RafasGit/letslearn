@@ -11,7 +11,7 @@
 
 
  ## Features
-![Image1](https://github.com/RafasGit/fintter/blob/main/public/fintterhome.png)
+![Image1](https://github.com/RafasGit/letslearn/blob/main/public/letslearnhome.png)
 
  A financial management platform providing insight into your expenditure and income transactions;
 
