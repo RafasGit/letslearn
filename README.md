@@ -84,4 +84,4 @@ For any questions or inquiries, please reach out to the development team at [let
    - Twitter: [@twitter](https://x.com/rafa_codes22)
    - LinkedIn: [LinkedIn](https://www.linkedin.com/in/joshua-ng-ang-a-13158120a)
  
- Enjoy using Fintter!
+ Enjoy using letslearn!
