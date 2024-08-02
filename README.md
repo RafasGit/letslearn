@@ -16,13 +16,18 @@
  A financial management platform providing insight into your expenditure and income transactions;
 
 
-- 📈 Interactive Financial Dashboard: Visualize and manage finances in realtime
-- 📊 Financial Analytics: Custom data views with various chart options mapping expenditure and income trends and paterns as well as transaction filters by account or date
-- ➕ Account, categories and transaction creation forms for easily adding and deleting transactions. 
-- 🗃️ CSV Transaction Imports: Import transactions from CSV files.
-- 🔐 Authentication provided by Clerk (Core 2): Secure data access.
-- 🔥 Serverless functions and APIs via Hono.js: Type checked, authenticated and efficient APIs.
-- 🪝 State Management via Tanstack React Query: Efficient state management for a smooth experience.
+- 📈 Create new courses and chapters: using provided forms allowing you to categorize your course, include course chapters and as well set a price for your course.
+- 📊 Teacher mode/Admin panel: Switch to admin mode to edit or create chapters and courses. 
+- ↔️ Easily Reorder Chapter Position with Drag n’ Drop: Organize your course content with simple drag-and-drop functionality. 
+- 📁 Enhanced learning experience: Upload course thumbnails and multimedia learning resources such as attachments and Videos using UploadThing.
+- 🎥  Video processing and live streaming using Mux: high quaity video content and smooth playback using the Mux video player.
+-  📚 Student Dashboard: Access all your courses and track your learning journey in one place. Browse and filter courses in various categories.
+- 💳 Purchase courses with quick credit or debit card checkout: Stripe integration for secure transactions. 
+- ✅ Progress tracking: Track your learning progress by marking chapters as completed or uncompleted. 
+- 📊 Financial Analytics for course creators: Custom data views with various chart options mapping course purchasing trends and paterns as well as transaction filters by account or date.
+- 🔐 Authentication provided by Clerk: Secure data access and user authentication.
+
+
 
  ## Stack and Technologies Used
    - Front-End: NextJs, Zustand, 🎨 TailwindCSS and Shadcn UI.
