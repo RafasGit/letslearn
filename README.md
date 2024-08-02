@@ -13,8 +13,7 @@
  ## Features
 ![Image1](https://github.com/RafasGit/letslearn/blob/main/public/letslearnhome.png)
 
- A financial management platform providing insight into your expenditure and income transactions;
-
+ A learning management system which provides the best experience for both students and teachers. Teachers can create manage and sell their technical courses to students which come with ease of purchase, multimedia content and progress tracking.
 
 - 🆕 Create new courses and chapters: using provided forms allowing you to categorize your course, include course chapters and as well set a price for your course.
 - 👩‍🏫 Teacher mode/Admin panel: Switch to admin mode to edit or create chapters and courses. 
@@ -31,8 +30,8 @@
 
  ## Stack and Technologies Used
    - Front-End: NextJs, Zustand, 🎨 TailwindCSS and Shadcn UI.
-   - Back-End:  BunJs, TypeScript, 🔥Hono.js. 
-   - Database: 💾 PostgreSQL, Drizzle ORM and Neon db
+   - Back-End: 🟦 TypeScript, Axios. 
+   - Database: 💾 PostgreSQL, Neon db and 🗄️ Prisma ORM
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -79,7 +78,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contributors
 
-For any questions or inquiries, please reach out to the development team at [fintter](mailto:joshraphael424@gmail.com)
+For any questions or inquiries, please reach out to the development team at [letslearn](mailto:joshraphael424@gmail.com)
   
    - GitHub: [@github](https://github.com/RafasGit)
    - Twitter: [@twitter](https://x.com/rafa_codes22)
