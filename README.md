@@ -23,7 +23,7 @@
 - 📚 Student Dashboard: Access all your courses and track your learning journey in one place. Browse and filter courses in various categories.
 - 💳 Purchase courses with quick credit or debit card checkout: Stripe integration for secure transactions. 
 - ✅ Progress tracking: Track your learning progress by marking chapters as completed or uncompleted. 
-- 📊 Financial Analytics for course creators: Custom data views with various chart options mapping course purchasing trends and paterns as well as transaction filters by account or date.
+- 📊 Financial Analytics for course creators: Custom data views with various chart options mapping course purchasing trends and patterns as well as transaction filters by account or date.
 - 🔐 Authentication provided by Clerk: Secure data access and user authentication.
 
 
